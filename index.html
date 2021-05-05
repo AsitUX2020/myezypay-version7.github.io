@@ -42,13 +42,13 @@
 <body>
 
     <!-- Navbar Start Here -->
-    <nav class="navbar navbar-expand-lg navbar-light my-header">
+    <nav class="navbar navbar-expand-lg navbar-light my-header d-none d-md-block">
         <div class="container">
             <a class="navbar-brand" href="#">
                 <img src="assets/images/brand-logo.svg" alt="" width="auto" height="48">
             </a>
             <div class="collapse navbar-collapse d-none d-xl-block hero-contact" id="navbarTogglerDemo03">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav information">
                     <li class="contact-info">
                         <p class="contact-text" href="#"><img class="contact-icon" src="assets/images/phone.svg"
                                 alt="phone">Customer Care Number : 0341-2253334 / +91 93329 97400</p>
@@ -65,29 +65,33 @@
     <!-- Navbar End Here -->
 
     <!-- Hero Content Start Here -->
-    <div class="hero-content" style="background: linear-gradient(#5692ff, #100a87);">
+    <div class="hero-content" style="background: linear-gradient(240deg,#280071 0, #237da4 100%);">
         <div class="container">
             <div class="row banner-group">
-                <div class="col-md-6 col-lg-8 col-xl-8 d-none d-md-block banner-img">
+                <div class="col-lg-8 d-none d-lg-block banner-img">
                     <img class="micro-atm" src="assets/images/banner1.png" alt="">
                 </div>
-                <div class="col-md-6 col-lg-4 col-xl-4 special-form">
+                <div class="col-lg-4 col-md-12 col-sm-12 col-lg-4 col-xl-4 special-form">
                     <div class="login-card">
-                        <div class="login-header">
+                        <div class="login-header" id="content-desktop">
                             <h5 class="sm-title">Welcome To</h5>
                             <h3 class="bg-title">Customer Portal</h3>
+                        </div>
+                        <div class="col-sm mx-auto text-center pb-2 form-logo" id="content-mobile">
+                            <img class="img-responsive logo-login" src="assets/images/brand-logo.svg" tabindex="0">
                         </div>
                         <div class="login-form">
                             <fieldset class="form-group label-floating">
                                 <div class="on-focus clearfix " style="position: relative;">
-                                    <label class="control-label pace">User Id or Mobile Number</label>
+                                    <label class="control-label pace">User Id or Mobile Number<span
+                                            class="star">*</span></label>
                                     <input class="form-control left-icon" type="text">
                                     <span><img class="input-icon" src="assets/images/userID.svg" alt=""></span>
                                 </div>
                             </fieldset>
                             <fieldset class="form-group label-floating">
                                 <div class="on-focus clearfix " style="position: relative;">
-                                    <label class="control-label pace">Password</label>
+                                    <label class="control-label pace">Password<span class="star">*</span></label>
                                     <input class="form-control left-icon" type="password" id="password">
                                     <span><img class="input-icon" src="assets/images/padlock.svg" alt=""></span>
                                     <span><i class="fa fa-eye view-icon" id="togglePassword"
@@ -96,27 +100,28 @@
                             </fieldset>
                             <fieldset class="form-group label-floating">
                                 <div class="on-focus clearfix " style="position: relative;">
-                                    <label class="control-label capt">Enter the text as shown in the image*</label>
+                                    <label class="control-label capt">Enter the text as shown in the image<span
+                                            class="star">*</span></label>
                                     <input class="form-control captcha-text" type="text">
                                 </div>
                             </fieldset>
                             <div class="captcha-group">
                                 <img class="captcha-image" src="assets/images/captcha.png" alt="" style="float: left;">
-                                <button class="btn btn-primary refresh" type="submit" onClick="refreshcaptcha()"><img
+                                <button class="btn btn-link refresh" type="submit" onClick="refreshcaptcha()"><img
                                         class="captcha-icon" src="assets/images/refresh.svg" alt="">
                                 </button>
                             </div>
-                            <div class="" style="clear: both;">
-                                <div class="custom-control custom-switch" style="float: left; margin-bottom: 20px;">
-                                    <input type="checkbox" class="custom-control-input" id="customSwitch1">
-                                    <label class="custom-control-label" for="customSwitch1">Remember Me</label>
-                                </div>
-                                <div class="forgot-pass" style="float: right; margin-bottom: 20px;">
-                                    <button type="button" class="btn btn-link forgot-label" data-toggle=""
-                                        data-target="">Forgot Password?</button>
-                                </div>
+                            <button class="btn btn-primary sign-in" type="submit">Login</button>
+                            <div class="about-login">
+                                <ul class="loginlink">
+                                    <li><a class="linking" ng-click="gotoForgotPassword()"
+                                            routerlink="/prelogin/forgot-password" rel="noopener noreferrer"
+                                            href="#/prelogin/forgot-password">Forgot Password</a></li>
+                                    <li><a class="linking"
+                                            href="h#/prelogin/join-us"
+                                            target="" rel="noopener noreferrer">Join Us</a></li>
+                                </ul>
                             </div>
-                            <button class="btn btn-primary sign-in" type="submit">Sign in</button>
                         </div>
                     </div>
                     <div class="row d-flex justify-content-between app-card">

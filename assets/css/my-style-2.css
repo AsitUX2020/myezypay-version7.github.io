@@ -406,7 +406,7 @@ select:focus ~ .bar:before, select:focus ~ .bar:after {
     padding: 10px 0px;
     display: inline-block;
 	margin-bottom: 10px;
-	border-bottom:1px solid #737373;
+	border-bottom:1px solid #2a3541;
 }
 .icon-link{
     width: 75px;
@@ -594,11 +594,6 @@ select:focus ~ .bar:before, select:focus ~ .bar:after {
 }
 .modifi {
     margin: 24px -2px 5px;
-}
-.star{
-	color: red;
-    font-size: 12px;
-    line-height: 0px;
 }
 /*==============END MATERIAL STYLE===============================*/		
 
@@ -975,7 +970,7 @@ select:focus ~ .bar:before, select:focus ~ .bar:after {
     height: 20px;
 }
 .view-icon{
-    font-size: 16px !important;
+    font-size: 18px !important;
 	position: absolute;
     right: 0;
     top: 12px;

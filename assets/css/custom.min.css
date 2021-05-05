@@ -2224,7 +2224,7 @@ span.section {
 }
 .form-control:focus {
  border-color:#CCD0D7;
- border-color: #2D8CFF;
+ border-color: #0094da;
 }
 legend {
  font-size:18px;
@@ -4588,7 +4588,7 @@ ul.notifications {
 	font-size:12px;
 }
 .cross-but{
-	color:#737373;
+	color:#2a3541;
 	cursor:pointer;
 	font-size: 20px;
     margin-right: 5px;

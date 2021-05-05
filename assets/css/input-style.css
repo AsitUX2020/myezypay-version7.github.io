@@ -16,7 +16,7 @@
 
 .floating-select:focus {
      outline:none;
-     border-bottom:2px solid #2D8CFF; 
+     border-bottom:2px solid #0094da; 
 }
 
 .floating-label label {
@@ -48,7 +48,7 @@
 }
 .form-control, .form-group .form-control {
   border: 0;
-  background-image: linear-gradient(#2D8CFF, #2D8CFF), linear-gradient(#8c8c8c, #8c8c8c);
+  background-image: linear-gradient(#0094da, #0094da), linear-gradient(#8c8c8c, #8c8c8c);
   background-size: 0 2px, 100% 1px;
   background-repeat: no-repeat;
   background-position: center bottom, center calc(100% - 1px);
@@ -90,10 +90,10 @@
   position: absolute;
   display: none; }
 .form-group .form-control.valid:focus {
-  background-image: linear-gradient(#4caf50, #4caf50), linear-gradient(#737373, #737373); }
+  background-image: linear-gradient(#4caf50, #4caf50), linear-gradient(#2a3541, #2a3541); }
 .form-group.is-focused .form-control {
   outline: none;
-  background-image: linear-gradient(#2D8CFF, #2D8CFF), linear-gradient(#737373, #737373);
+  background-image: linear-gradient(#0094da, #0094da), linear-gradient(#2a3541, #2a3541);
   background-size: 100% 2px, 100% 1px;
   box-shadow: none;
   transition-duration: 0.3s; 
@@ -154,23 +154,23 @@
 .form-control::-moz-placeholder {
   font-size: 14px;
   line-height: 1.428571429;
-  color: #737373;
+  color: #2a3541;
   font-weight: 400; }
 .form-control:-ms-input-placeholder {
   font-size: 14px;
   line-height: 1.428571429;
-  color: #737373;
+  color: #2a3541;
   font-weight: 400; }
 .form-control::-webkit-input-placeholder {
   font-size: 14px;
   line-height: 1.428571429;
-  color: #737373;
+  color: #2a3541;
   font-weight: 400; }
 
 .checkbox label, .radio label, label, .label-on-left, .label-on-right {
   font-size: 16px;
   line-height: 1.428571429;
-  color: #737373;
+  color: #2a3541;
   font-weight: 400; 
  }
  :checked + span {
@@ -199,27 +199,27 @@ label.control-label {
 .form-group .form-control::-moz-placeholder {
   font-size: 14px;
   line-height: 1.428571429;
-  color: #737373;
+  color: #2a3541;
   font-weight: 400; }
 .form-group .form-control:-ms-input-placeholder {
   font-size: 14px;
   line-height: 1.428571429;
-  color: #737373;
+  color: #2a3541;
   font-weight: 400; }
 .form-group .form-control::-webkit-input-placeholder {
   font-size: 14px;
   line-height: 1.428571429;
-  color: #737373;
+  color: #2a3541;
   font-weight: 400; }
 .form-group .checkbox label, .form-group .radio label, .form-group label, .form-group .label-on-left, .form-group .label-on-right {
   font-size: 16px;
   line-height: 1.428571429;
-  color: #737373;
+  color: #2a3541;
   font-weight: 400; }
 .form-group label.control-label {
   font-size: 11px;
   line-height: 1.0714285718;
-  color: #737373;
+  color: #2a3541;
   font-weight: 400;
   margin: 16px 0 0 0;
 }
@@ -230,26 +230,26 @@ label.control-label {
   top: -7px;
   font-size: 16px;
   line-height: 1.428571429;
-  color:#737373;
+  color:#2a3541;
   }
 .form-group.label-floating label.pace, .form-group.label-placeholder label.pace {
   top: -6px;
   font-size: 16px;
   line-height: 1.428571429;
-  color:#737373;
+  color:#2a3541;
   margin-left:28px;
 }
 .form-group.label-floating label.capt, .form-group.label-placeholder label.capt {
   top: -6px;
   font-size: 16px;
   line-height: 1.428571429;
-  color:#737373;
+  color:#2a3541;
 }
 .form-group.label-floating label.amut, .form-group.label-placeholder label.amut {
   top: -7px;
   font-size: 16px;
   line-height: 1.428571429;
-  color:#737373;
+  color:#2a3541;
   margin-left:18px;
 }
 .form-group.label-static label.control-label, .form-group.label-floating.is-focused label.control-label, .form-group.label-floating:not(.is-empty) label.control-label {
@@ -261,11 +261,11 @@ label.control-label {
 }
 .form-group.label-static label.pace, .form-group.label-floating.is-focused label.pace, .form-group.label-floating:not(.is-empty) label.pace {
   left: -28px;
-  color: #2D8CFF;
+  color: #0094da;
 }
 .form-group.label-static label.capt, .form-group.label-floating.is-focused label.capt, .form-group.label-floating:not(.is-empty) label.capt {
   left: -4px;
-  color: #2D8CFF;
+  color: #0094da;
   background-color: white;
   padding: 4px;
 }
@@ -398,7 +398,7 @@ select.form-control[multiple], .form-group.is-focused select.form-control[multip
   .form-group label.control-label {
     font-size: 14px;
     line-height: 1.0714285718;
-    color: #737373;
+    color: #2a3541;
     font-weight: 400;
     margin: 18px 0 0 0;
   }
@@ -416,7 +416,7 @@ select.form-control[multiple], .form-group.is-focused select.form-control[multip
   .form-group label.control-label {
     font-size: 14px;
     line-height: 1.0714285718;
-    color: #737373;
+    color: #2a3541;
     font-weight: 400;
     margin: 18px 0 0 0;
   }
@@ -434,7 +434,7 @@ select.form-control[multiple], .form-group.is-focused select.form-control[multip
   .form-group label.control-label {
     font-size: 11px;
     line-height: 1.0714285718;
-    color: #737373;
+    color: #2a3541;
     font-weight: 400;
     margin: 18px 0 0 0;
   }
@@ -452,7 +452,7 @@ select.form-control[multiple], .form-group.is-focused select.form-control[multip
   .form-group label.control-label {
     font-size: 14px;
     line-height: 1.0714285718;
-    color: #737373;
+    color: #2a3541;
     font-weight: 400;
     margin: 18px 0 0 0;
   }
@@ -470,7 +470,7 @@ select.form-control[multiple], .form-group.is-focused select.form-control[multip
   .form-group label.control-label {
     font-size: 14px;
     line-height: 1.0714285718;
-    color: #737373;
+    color: #2a3541;
     font-weight: 400;
     margin: 18px 0 0 0;
   }
