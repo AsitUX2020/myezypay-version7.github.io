@@ -41,111 +41,137 @@
 
 <body>
 
-    <!-- Navbar Start Here -->
-    <nav class="navbar navbar-expand-lg navbar-light my-header d-none d-md-block">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                <img src="assets/images/brand-logo.svg" alt="" width="auto" height="48">
-            </a>
-            <div class="collapse navbar-collapse d-none d-xl-block hero-contact" id="navbarTogglerDemo03">
-                <ul class="navbar-nav information">
-                    <li class="contact-info">
-                        <p class="contact-text" href="#"><img class="contact-icon" src="assets/images/phone.svg"
-                                alt="phone">Customer Care Number : 0341-2253334 / +91 93329 97400</p>
-                    </li>
-                    <li class="contact-info">
-                        <p class="contact-text" href="#"><img class="contact-icon" src="assets/images/mail.svg"
-                                alt="email">Email : support@ezypay.co.in</p>
-                    </li>
-                </ul>
-            </div>
-            <button class="btn btn-primary join-us" type="submit">Join Us</button>
-        </div>
-    </nav>
-    <!-- Navbar End Here -->
-
     <!-- Hero Content Start Here -->
-    <div class="hero-content" style="background: linear-gradient(240deg,#280071 0, #237da4 100%);">
-        <div class="container">
-            <div class="row banner-group">
-                <div class="col-lg-8 d-none d-lg-block banner-img">
-                    <img class="micro-atm" src="assets/images/banner1.png" alt="">
-                </div>
+    <div class="hero-content">
+        <div class="container-fluid" style="padding: 0;">
+            <div class="row no-gutters banner-group">
                 <div class="col-lg-4 col-md-12 col-sm-12 col-lg-4 col-xl-4 special-form">
-                    <div class="login-card">
-                        <div class="login-header" id="content-desktop">
-                            <h5 class="sm-title">Welcome To</h5>
-                            <h3 class="bg-title">Customer Portal</h3>
-                        </div>
-                        <div class="col-sm mx-auto text-center pb-2 form-logo" id="content-mobile">
-                            <img class="img-responsive logo-login" src="assets/images/brand-logo.svg" tabindex="0">
-                        </div>
-                        <div class="login-form">
-                            <fieldset class="form-group label-floating">
-                                <div class="on-focus clearfix " style="position: relative;">
-                                    <label class="control-label pace">User Id or Mobile Number<span
-                                            class="star">*</span></label>
-                                    <input class="form-control left-icon" type="text">
-                                    <span><img class="input-icon" src="assets/images/userID.svg" alt=""></span>
+                    <div class="row">
+                        <div class="col-lg-10 mx-auto content-group">
+                            <div class="login-card">
+                                <div class="col-sm mx-auto text-center pb-2 form-logo">
+                                    <img class="img-responsive logo-login" src="assets/images/brand-logo.svg" tabindex="0">
                                 </div>
-                            </fieldset>
-                            <fieldset class="form-group label-floating">
-                                <div class="on-focus clearfix " style="position: relative;">
-                                    <label class="control-label pace">Password<span class="star">*</span></label>
-                                    <input class="form-control left-icon" type="password" id="password">
-                                    <span><img class="input-icon" src="assets/images/padlock.svg" alt=""></span>
-                                    <span><i class="fa fa-eye view-icon" id="togglePassword"
-                                            aria-hidden="true"></i></span>
+                                <div class="login-form">
+                                    <fieldset class="form-group label-floating">
+                                        <div class="on-focus clearfix " style="position: relative;">
+                                            <label class="control-label pace">User Id or Mobile Number<span
+                                                    class="star">*</span></label>
+                                            <input class="form-control left-icon" type="text">
+                                            <span><img class="input-icon" src="assets/images/icons/userID.svg" alt=""></span>
+                                        </div>
+                                    </fieldset>
+                                    <fieldset class="form-group label-floating">
+                                        <div class="on-focus clearfix " style="position: relative;">
+                                            <label class="control-label pace">Password<span class="star">*</span></label>
+                                            <input class="form-control left-icon" type="password" id="password">
+                                            <span><img class="input-icon" src="assets/images/icons/padlock.svg" alt=""></span>
+                                            <span><i class="fa fa-eye view-icon" id="togglePassword"
+                                                    aria-hidden="true"></i></span>
+                                        </div>
+                                    </fieldset>
+                                    <fieldset class="form-group label-floating">
+                                        <div class="on-focus clearfix " style="position: relative;">
+                                            <label class="control-label capt">Enter the text as shown in the image<span
+                                                    class="star">*</span></label>
+                                            <input class="form-control captcha-text" type="text">
+                                        </div>
+                                    </fieldset>
+                                    <div class="captcha-group">
+                                        <img class="captcha-image" src="assets/images/captcha.png" alt="" style="float: left;">
+                                        <button class="btn btn-link refresh" type="submit" onClick="refreshcaptcha()"><img
+                                                class="captcha-icon" src="assets/images/icons/refresh.svg" alt="">
+                                        </button>
+                                    </div>
+                                    <button class="btn btn-primary sign-in" type="submit">Login</button>
+                                    <div class="about-login">
+                                        <ul class="loginlink">
+                                            <li><a class="linking" ng-click="gotoForgotPassword()"
+                                                    routerlink="/prelogin/forgot-password" rel="noopener noreferrer"
+                                                    href="#/prelogin/forgot-password">Forgot Password</a></li>
+                                            <li><a class="linking"
+                                                    href="h#/prelogin/join-us"
+                                                    target="" rel="noopener noreferrer">Join Us</a></li>
+                                        </ul>
+                                    </div>
                                 </div>
-                            </fieldset>
-                            <fieldset class="form-group label-floating">
-                                <div class="on-focus clearfix " style="position: relative;">
-                                    <label class="control-label capt">Enter the text as shown in the image<span
-                                            class="star">*</span></label>
-                                    <input class="form-control captcha-text" type="text">
-                                </div>
-                            </fieldset>
-                            <div class="captcha-group">
-                                <img class="captcha-image" src="assets/images/captcha.png" alt="" style="float: left;">
-                                <button class="btn btn-link refresh" type="submit" onClick="refreshcaptcha()"><img
-                                        class="captcha-icon" src="assets/images/refresh.svg" alt="">
-                                </button>
                             </div>
-                            <button class="btn btn-primary sign-in" type="submit">Login</button>
-                            <div class="about-login">
-                                <ul class="loginlink">
-                                    <li><a class="linking" ng-click="gotoForgotPassword()"
-                                            routerlink="/prelogin/forgot-password" rel="noopener noreferrer"
-                                            href="#/prelogin/forgot-password">Forgot Password</a></li>
-                                    <li><a class="linking"
-                                            href="h#/prelogin/join-us"
-                                            target="" rel="noopener noreferrer">Join Us</a></li>
-                                </ul>
+                            <div class="row d-flex justify-content-between app-card">
+                                <div class="col-md-6 sectigo-brand" style="vertical-align: middle;">
+                                    <label class="download-app">About SSL Certificates</label>
+                                    <img class="sectigo-logo" src="assets/images/sectigo-logo.png" alt="" width="auto"
+                                        height="40" style="float: left;">
+                                </div>
+                                <div class="col-md-6 dnld-app">
+                                    <label class="download-app">Download The App</label>
+                                    <a class="app-brand" href="https://play.google.com/store/apps/details?id=com.ezypay"
+                                        target="_blank"><img class="playstore" src="assets/images/playstore.png" alt=""
+                                            width="auto" height="40" style="float: left;">
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="row d-flex justify-content-between app-card">
-                        <div class="col-md-6 sectigo-brand" style="vertical-align: middle;">
-                            <label class="download-app">About SSL Certificates</label>
-                            <img class="sectigo-logo" src="assets/images/sectigo-logo.png" alt="" width="auto"
-                                height="40" style="float: left;">
+                </div>
+                <div class="col-lg-8 d-none d-lg-block banner-img">
+                    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel"
+                        data-interval="5000">
+                        <ol class="carousel-indicators">
+                            <li data-target="carouselExampleFade" data-slide-to="0" class="active"></li>
+                            <li data-target="carouselExampleFade" data-slide-to="1"></li>
+                            <li data-target="carouselExampleFade" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner" role="listbox">
+                            <!---Slide 1-->
+                            <div class="carousel-item active"
+                                style="background-image: url(assets/images/figure/slide01.jpg)"></div>
+                            <!---Slide 2-->
+                            <div class="carousel-item" style="background-image: url(assets/images/figure/slide02.jpg)">
+                            </div>
+                            <!---Slide 3-->
+                            <div class="carousel-item" style="background-image: url(assets/images/figure/slide03.jpg)">
+                            </div>
                         </div>
-                        <div class="col-md-6 dnld-app">
-                            <label class="download-app">Download The App</label>
-                            <a class="app-brand" href="https://play.google.com/store/apps/details?id=com.ezypay"
-                                target="_blank"><img class="playstore" src="assets/images/playstore.png" alt=""
-                                    width="auto" height="40" style="float: left;">
-                            </a>
-                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
                     </div>
+                    <!-----
+                    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item ezypay-caro active">
+                                <img src="assets/images/figure/slide01.jpg" class="d-block w-100 img-fluid" alt="...">
+                            </div>
+                            <div class="carousel-item ezypay-caro">
+                                <img src="assets/images/figure/slide02.jpg" class="d-block w-100 img-fluid" alt="...">
+                            </div>
+                            <div class="carousel-item ezypay-caro">
+                                <img src="assets/images/figure/slide01.jpg" class="d-block w-100 img-fluid" alt="...">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                    ----->
                 </div>
             </div>
         </div>
     </div>
     <!-- Hero Content End Here -->
 
-
     <!-- Login Footer Start Here -->
+    <!-----
     <div class="footer-content" style="background: #030126;">
         <div class="container d-flex justify-content-between">
             <div class="copyright">
@@ -178,6 +204,7 @@
             </div>
         </div>
     </div>
+    ----->
     <!-- Login Footer End Here -->
 
     <!-- jQuery -->
