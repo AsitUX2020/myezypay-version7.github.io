@@ -190,7 +190,7 @@ body{
     padding-left: 0;
     font-family: Roboto-Regular,"Helvetica Neue",sans-serif;
     font-size: 14px;
-    margin: 16px 0 28px;
+    margin: 16px 0 20px;
 }
 .loginlink li {
     display: inline-block;
@@ -215,11 +215,12 @@ body{
 .weblink {
     text-align: center;
     list-style: none;
-    padding-left: 0;
+    padding: 20px 0 0 0;
     font-family: Roboto-Regular,"Helvetica Neue",sans-serif;
-    font-size: 12px;
-    margin-top: 16px;
+    font-size: 13px;
+    font-weight: 600;
     margin-bottom: 0;
+    border-top: 1px solid #cecece;
 }
 .weblink li {
     display: inline-block;
@@ -309,6 +310,14 @@ body{
     .app-card{
         padding: 12px;
     }
+    .sectigo-logo{
+        width: auto;
+        height: 28px !important;
+    }
+    .playstore{
+        width: auto;
+        height: 28px !important;
+    }
     .captcha-image{
         margin-right: 6px !important;
     }
@@ -329,12 +338,6 @@ body{
     .link-to-website{
         font-size: 12px;
         line-height: 20px;
-    }
-    .sectigo-brand{
-        width: 50% !important;
-    }
-    .dnld-app{
-        width: 50% !important;
     }
     .download-app{
         font-size: 12px !important;
@@ -362,11 +365,11 @@ body{
     }
     .sectigo-logo{
         width: auto;
-        height: 36px !important;
+        height: 32px;
     }
     .playstore{
         width: auto;
-        height: 36px !important;
+        height: 32px;
     }
     .sm-title{
         font-size: 12px !important;
@@ -391,12 +394,6 @@ body{
     .forgot-label{
         font-size: 12px !important;
     }
-    .sectigo-brand{
-        width: 50% !important;
-    }
-    .dnld-app{
-        width: 50% !important;
-    }
     .download-app{
         font-size: 12px !important;
         text-align: left !important;
@@ -415,6 +412,14 @@ body{
     }   
 }
 @media (max-width:360px){
+    .sectigo-logo{
+        width: auto;
+        height: 32px;
+    }
+    .playstore{
+        width: auto;
+        height: 32px;
+    }
     .download-app{
         font-size: 12px !important;
         text-align: left !important;
@@ -450,12 +455,6 @@ body{
     .link-to-website{
         font-size: 12px;
         line-height: 20px;
-    }
-    .sectigo-brand{
-        width: 50% !important;
-    }
-    .dnld-app{
-        width: 50% !important;
     }
     .download-app{
         font-size: 14px;
@@ -495,12 +494,6 @@ body{
         font-size: 12px;
         line-height: 20px;
     }
-    .sectigo-brand{
-        width: 50% !important;
-    }
-    .dnld-app{
-        width: 50% !important;
-    }
     .download-app{
         font-size: 14px;
         text-align: left !important;
@@ -539,12 +532,6 @@ body{
         font-size: 12px;
         line-height: 20px;
     }
-    .sectigo-brand{
-        width: 50% !important;
-    }
-    .dnld-app{
-        width: 50% !important;
-    }
     .download-app{
         font-size: 16px;
         text-align: left !important;
@@ -570,12 +557,6 @@ body{
     .footer-content{
         padding-top: 16px;
         padding-bottom: 16px;
-    }
-    .sectigo-brand{
-        width: 50% !important;
-    }
-    .dnld-app{
-        width: 50% !important;
     }
     .download-app{
         font-size: 16px;
