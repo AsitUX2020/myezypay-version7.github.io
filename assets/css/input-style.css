@@ -464,6 +464,10 @@ select.form-control[multiple], .form-group.is-focused select.form-control[multip
   .form-group.label-floating label.pace, .form-group.label-placeholder label.pace {
     font-size: 13px;
   }
+  .form-group.label-floating .star, .form-group.label-placeholder .star {
+    font-size: 16px !important;
+    padding-left: 2px;
+  }
   .form-group.label-floating label.capt, .form-group.label-placeholder label.capt {
     font-size: 13px;
   }
