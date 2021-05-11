@@ -11,6 +11,14 @@ body{
 .carousel-item{
     height: 100vh;
 }
+.carousel-inner > .item {
+    position: relative;
+    display: none;
+    -webkit-transition: 0.6s ease-in-out left;
+    -moz-transition: 0.6s ease-in-out left;
+    -o-transition: 0.6s ease-in-out left;
+    transition: 0.6s ease-in-out left;
+}
 .custom-control-input:checked~.custom-control-label::before{
     border-color: #0094da !important;
     background-color: #0094da !important;
