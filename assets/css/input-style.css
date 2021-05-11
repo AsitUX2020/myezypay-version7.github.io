@@ -228,26 +228,26 @@ label.control-label {
   font-size: 11px; }
 .form-group.label-floating label.control-label, .form-group.label-placeholder label.control-label {
   top: -7px;
-  font-size: 15px;
+  font-size: 16px;
   line-height: 1.428571429;
   color:#2a3541;
   }
 .form-group.label-floating label.pace, .form-group.label-placeholder label.pace {
   top: -6px;
-  font-size: 15px;
+  font-size: 16px;
   line-height: 1.428571429;
   color:#2a3541;
   margin-left:28px;
 }
 .form-group.label-floating label.capt, .form-group.label-placeholder label.capt {
   top: -6px;
-  font-size: 15px;
+  font-size: 16px;
   line-height: 1.428571429;
   color:#2a3541;
 }
 .form-group.label-floating label.amut, .form-group.label-placeholder label.amut {
   top: -7px;
-  font-size: 15px;
+  font-size: 16px;
   line-height: 1.428571429;
   color:#2a3541;
   margin-left:18px;
@@ -387,16 +387,16 @@ select.form-control[multiple], .form-group.is-focused select.form-control[multip
 
 @media (max-width:280px){
   .form-group.label-floating label.control-label, .form-group.label-placeholder label.control-label {
-    font-size: 14px;
+    font-size: 16px;
   }
   .form-group.label-floating label.pace, .form-group.label-placeholder label.pace {
-    font-size: 14px;
+    font-size: 16px;
   }
   .form-group.label-floating label.capt, .form-group.label-placeholder label.capt {
-    font-size: 14px;
+    font-size: 16px;
   }
   .form-group label.control-label {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.0714285718;
     color: #2a3541;
     font-weight: 400;
@@ -405,16 +405,16 @@ select.form-control[multiple], .form-group.is-focused select.form-control[multip
 } 
 @media (max-width:320px){
   .form-group.label-floating label.control-label, .form-group.label-placeholder label.control-label {
-    font-size: 14px;
+    font-size: 16px;
     }
   .form-group.label-floating label.pace, .form-group.label-placeholder label.pace {
-    font-size: 14px;
+    font-size: 16px;
   }
   .form-group.label-floating label.capt, .form-group.label-placeholder label.capt {
-    font-size: 14px;
+    font-size: 16px;
   }
   .form-group label.control-label {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.0714285718;
     color: #2a3541;
     font-weight: 400;
@@ -441,16 +441,16 @@ select.form-control[multiple], .form-group.is-focused select.form-control[multip
 }
 @media (max-width:1024px){
   .form-group.label-floating label.control-label, .form-group.label-placeholder label.control-label {
-    font-size: 14px;
+    font-size: 16px;
   }
   .form-group.label-floating label.pace, .form-group.label-placeholder label.pace {
-    font-size: 14px;
+    font-size: 16px;
   }
   .form-group.label-floating label.capt, .form-group.label-placeholder label.capt {
-    font-size: 14px;
+    font-size: 16px;
   }
   .form-group label.control-label {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.0714285718;
     color: #2a3541;
     font-weight: 400;
@@ -459,20 +459,20 @@ select.form-control[multiple], .form-group.is-focused select.form-control[multip
 }
 @media (max-width:1200px){
   .form-group.label-floating label.control-label, .form-group.label-placeholder label.control-label {
-    font-size: 13px;
+    font-size: 16px;
   }
   .form-group.label-floating label.pace, .form-group.label-placeholder label.pace {
-    font-size: 13px;
+    font-size: 16px;
   }
   .form-group.label-floating .star, .form-group.label-placeholder .star {
     font-size: 16px !important;
     padding-left: 2px;
   }
   .form-group.label-floating label.capt, .form-group.label-placeholder label.capt {
-    font-size: 13px;
+    font-size: 16px;
   }
   .form-group label.control-label {
-    font-size: 12px;
+    font-size: 16px;
     line-height: 1.0714285718;
     color: #2a3541;
     font-weight: 400;
