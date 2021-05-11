@@ -91,6 +91,10 @@ body{
     padding: 0;
     margin: 20px 0;
 }
+.content-group{
+    padding-right: 24px !important;
+    padding-left: 24px !important;
+}
 .login-card{
     width: 100%;
     padding: 24px;
@@ -225,7 +229,7 @@ body{
     padding: 0 !important;
 }
 .download-app{
-    font-size: 14px !important;
+    font-size: 12px !important;
     color: #000000;
     line-height: 20px;
     text-align: center;
@@ -510,7 +514,6 @@ body{
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
     .special-form{
-        margin: 20px !important;
         width: 100%;
     }
     .footer-content{
