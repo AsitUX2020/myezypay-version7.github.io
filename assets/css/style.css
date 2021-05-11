@@ -102,22 +102,22 @@ body{
     background-color: #ffffff;
 }
 .logo-login{
-    width: 200px;
+    width: 180px;
     height: auto;
 }
 .login-header{
     text-align: left;
     text-transform: uppercase;
 }
-.sm-title{
-    font-size: 16px !important;
+.login-title{
+    font-size: 20px !important;
     color: #000000;
     margin-bottom: 4px !important;
 }
-.bg-title{
-    font-size: 24px !important;
-    color: #0094da;
-	margin: 0 !important;
+.login-description{
+    font-size: 20px !important;
+    color: #646464;
+	margin: 0 0 32px 0 !important;
 }
 .login-form{
     padding-top: 16px;
@@ -264,9 +264,6 @@ body{
     padding-left: 4px;
 }
 @media (max-width:280px){
-    .hero-content{
-        background-image: linear-gradient(240deg,#280071 0, #237da4 100%);
-    }
     .special-form{
         margin: 12px;
         padding: 0 !important;
@@ -274,11 +271,9 @@ body{
     }
     .login-card{
         padding: 12px;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
     .app-card{
         padding: 12px;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
     .captcha-image{
         margin-right: 6px !important;
@@ -314,9 +309,6 @@ body{
 }
 
 @media (max-width:320px){
-    .hero-content{
-        background-image: linear-gradient(240deg,#280071 0, #237da4 100%);
-    }
     .navbar-brand img{
         width: auto;
         height: 36px;
@@ -330,11 +322,9 @@ body{
     }
     .login-card{
         padding: 16px;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
     .app-card{
         padding: 16px;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
     .sectigo-logo{
         width: auto;
@@ -398,9 +388,6 @@ body{
     }
 }
 @media (max-width:411px){
-    .hero-content{
-        background-image: linear-gradient(240deg,#280071 0, #237da4 100%);
-    }
     .navbar-brand img{
         width: auto;
         height: 36px;
@@ -410,11 +397,9 @@ body{
     }
     .login-card{
         padding: 24px;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
     .app-card{
         padding: 24px;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
     .special-form{
         margin: 20px 0 !important;
@@ -446,9 +431,6 @@ body{
     
 }
 @media (max-width:414px){
-    .hero-content{
-        background-image: linear-gradient(240deg,#280071 0, #237da4 100%);
-    }
     .navbar-brand img{
         width: auto;
         height: 36px;
@@ -458,11 +440,9 @@ body{
     }
     .login-card{
         padding: 20px;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
     .app-card{
         padding: 20px;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
     .special-form{
         margin: 20px 0 !important;
@@ -495,9 +475,6 @@ body{
     
 }
 @media (max-width:540px){
-    .hero-content{
-        background-image: linear-gradient(240deg,#280071 0, #237da4 100%);
-    }
     .navbar-brand img{
         width: auto;
         height: 36px;
@@ -507,11 +484,9 @@ body{
     }
     .login-card{
         padding: 24px;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
     .app-card{
         padding: 24px;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
     .special-form{
         margin: 20px 0 !important;
@@ -543,9 +518,6 @@ body{
     
 }
 @media (max-width:768px){
-    .hero-content{
-        background-image: linear-gradient(240deg,#280071 0, #237da4 100%);
-    }
     #content-desktop {display: none;}
     #content-mobile {display: block;}
     .special-form{
@@ -557,11 +529,9 @@ body{
     }
     .login-card{
         padding: 24px;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
     .app-card{
         padding: 24px;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
     .footer-content{
         padding-top: 16px;
@@ -580,17 +550,12 @@ body{
     }
 }
 @media (max-width: 992px) {
-    .hero-content{
-        height: auto;
-        background-image: linear-gradient(240deg,#280071 0, #237da4 100%);
-    }
     .special-form{
         margin: 20px 0;
         width: 100%;
     }
     .login-card{
         padding: 24px;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
     .download-app{
         font-size: 12px;
@@ -599,7 +564,6 @@ body{
     }
     .app-card{
         padding: 24px;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
     .footer-content{
         position: inherit;
@@ -626,16 +590,11 @@ body{
 }
 
 @media (max-width:1024px){
-    .hero-content{
-        background-image: linear-gradient(240deg,#280071 0, #237da4 100%);
-    }
     .login-card{
         padding: 24px;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
     .app-card{
         padding: 24px;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
     .download-app{
         font-size: 12px;
@@ -660,16 +619,11 @@ body{
     
 }
 @media (max-width:1200px){
-    .hero-content{
-        background-image: linear-gradient(240deg,#280071 0, #237da4 100%);
-    }
     .login-card{
         padding: 24px;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
     .app-card{
         padding: 24px;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
     .download-app{
         font-size: 16px;

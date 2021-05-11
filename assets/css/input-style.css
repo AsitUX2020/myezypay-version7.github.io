@@ -228,26 +228,26 @@ label.control-label {
   font-size: 11px; }
 .form-group.label-floating label.control-label, .form-group.label-placeholder label.control-label {
   top: -7px;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 1.428571429;
   color:#2a3541;
   }
 .form-group.label-floating label.pace, .form-group.label-placeholder label.pace {
   top: -6px;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 1.428571429;
   color:#2a3541;
   margin-left:28px;
 }
 .form-group.label-floating label.capt, .form-group.label-placeholder label.capt {
   top: -6px;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 1.428571429;
   color:#2a3541;
 }
 .form-group.label-floating label.amut, .form-group.label-placeholder label.amut {
   top: -7px;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 1.428571429;
   color:#2a3541;
   margin-left:18px;
