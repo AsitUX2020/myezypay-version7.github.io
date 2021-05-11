@@ -50,39 +50,43 @@
                         <div class="col-lg-10 mx-auto content-group">
                             <div class="login-card">
                                 <div class="mx-auto pb-3 form-logo">
-                                    <img class="img-responsive logo-login" src="assets/images/brand-logo.svg" tabindex="0">
+                                    <img class="img-responsive logo-login" src="assets/images/brand-logo.svg"
+                                        tabindex="0">
                                 </div>
                                 <div class="login-form">
                                     <lable class="login-title">Welcome back!</lable>
                                     <p class="login-description">Sign in to continue</p>
                                     <fieldset class="form-group label-floating">
                                         <div class="on-focus clearfix " style="position: relative;">
-                                            <label class="control-label pace">User Id or Mobile Number<span
-                                                    class="star">*</span></label>
+                                            <label class="control-label pace">User ID<span class="star">*</span></label>
                                             <input class="form-control left-icon" type="text">
-                                            <span><img class="input-icon" src="assets/images/icons/userID.svg" alt=""></span>
+                                            <span><img class="input-icon" src="assets/images/icons/userID.svg"
+                                                    alt=""></span>
                                         </div>
                                     </fieldset>
                                     <fieldset class="form-group label-floating">
                                         <div class="on-focus clearfix " style="position: relative;">
-                                            <label class="control-label pace">Password<span class="star">*</span></label>
+                                            <label class="control-label pace">Password<span
+                                                    class="star">*</span></label>
                                             <input class="form-control left-icon" type="password" id="password">
-                                            <span><img class="input-icon" src="assets/images/icons/padlock.svg" alt=""></span>
+                                            <span><img class="input-icon" src="assets/images/icons/padlock.svg"
+                                                    alt=""></span>
                                             <span><i class="fa fa-eye view-icon" id="togglePassword"
                                                     aria-hidden="true"></i></span>
                                         </div>
                                     </fieldset>
                                     <fieldset class="form-group label-floating">
                                         <div class="on-focus clearfix " style="position: relative;">
-                                            <label class="control-label capt">Enter Captcha<span
-                                                    class="star">*</span></label>
+                                            <label class="control-label capt">Captcha<span class="star">*</span></label>
                                             <input class="form-control captcha-text" type="text">
                                         </div>
                                     </fieldset>
                                     <div class="captcha-group">
-                                        <img class="captcha-image" src="assets/images/captcha.png" alt="" style="float: left;">
-                                        <button class="btn btn-link refresh" type="submit" onClick="refreshcaptcha()"><img
-                                                class="captcha-icon" src="assets/images/icons/refresh.svg" alt="">
+                                        <img class="captcha-image" src="assets/images/captcha.png" alt=""
+                                            style="float: left;">
+                                        <button class="btn btn-link refresh" type="submit"
+                                            onClick="refreshcaptcha()"><img class="captcha-icon"
+                                                src="assets/images/icons/refresh.svg" alt="">
                                         </button>
                                     </div>
                                     <button class="btn btn-primary sign-in" type="submit">Sign In</button>
@@ -91,25 +95,45 @@
                                             <li><a class="linking" ng-click="gotoForgotPassword()"
                                                     routerlink="/prelogin/forgot-password" rel="noopener noreferrer"
                                                     href="#/prelogin/forgot-password">Forgot Password</a></li>
-                                            
                                         </ul>
                                     </div>
+                                    <ul class="weblink">
+                                        <li><a class="linking" ng-click="gotoPrivacyPolicy()" routerlink=""
+                                                rel="noopener noreferrer" href="https://ezypay.co.in/p_policy.html"
+                                                target="_blank">Privacy Policy</a>
+                                        </li>
+                                        <li><a class="linking" ng-click="gotoT&C()" routerlink=""
+                                                rel="noopener noreferrer" href="https://ezypay.co.in/t_conditions.html"
+                                                target="_blank">Terms
+                                                & Conditions</a>
+                                        </li>
+                                        <li><a class="linking" ng-click="gotoGrievancePolicy()" routerlink=""
+                                                rel="noopener noreferrer"
+                                                href="https://ezypay.co.in/grievance-policy.html"
+                                                target="_blank">Grievance Policy</a>
+                                        </li>
+                                        <li><a class="linking" ng-click="gotoFAQs()" routerlink=""
+                                                rel="noopener noreferrer" href="https://ezypay.co.in/faqs.html"
+                                                target="_blank">FAQ's</a>
+                                        </li>
+                                    </ul>
+                                    <div class="ssl-secured d-flex justify-content-between">
+                                        <div class="sectigo-brand">
+                                            <img class="sectigo-logo" src="assets/images/sectigo-logo.png" alt=""
+                                                style="float: left;">
+                                        </div>
+                                        <div class="dnld-app">
+                                            <a class="app-brand"
+                                                href="https://play.google.com/store/apps/details?id=com.ezypay"
+                                                target="_blank"><img class="playstore" src="assets/images/playstore.png"
+                                                    alt="" style="float: left;">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    
                                 </div>
                             </div>
-                            <div class="row d-flex justify-content-between app-card">
-                                <div class="col-md-6 sectigo-brand" style="vertical-align: middle;">
-                                    <label class="download-app">About SSL Certificates</label>
-                                    <img class="sectigo-logo" src="assets/images/sectigo-logo.png" alt="" width="auto"
-                                        height="40" style="float: left;">
-                                </div>
-                                <div class="col-md-6 dnld-app">
-                                    <label class="download-app">Download The App</label>
-                                    <a class="app-brand" href="https://play.google.com/store/apps/details?id=com.ezypay"
-                                        target="_blank"><img class="playstore" src="assets/images/playstore.png" alt=""
-                                            width="auto" height="40" style="float: left;">
-                                    </a>
-                                </div>
-                            </div>
+
                         </div>
                     </div>
                 </div>

@@ -124,7 +124,7 @@ body{
 }
 .app-card{
     width: 100%;
-    padding: 24px;
+    padding: 12px 24px 24px;
     overflow: hidden;
     margin: 1px 0 0 0 !important;
     border-radius: 0 0 4px 4px!important;
@@ -190,8 +190,7 @@ body{
     padding-left: 0;
     font-family: Roboto-Regular,"Helvetica Neue",sans-serif;
     font-size: 14px;
-    margin-top: 16px;
-    margin-bottom: 0;
+    margin: 16px 0 28px;
 }
 .loginlink li {
     display: inline-block;
@@ -212,6 +211,41 @@ body{
     top: 2px;
     margin: 0 10px;
     background-color: #0094da;
+}
+.weblink {
+    text-align: center;
+    list-style: none;
+    padding-left: 0;
+    font-family: Roboto-Regular,"Helvetica Neue",sans-serif;
+    font-size: 12px;
+    margin-top: 16px;
+    margin-bottom: 0;
+}
+.weblink li {
+    display: inline-block;
+    position: relative;
+}
+.weblink li a{
+    color: #000000 !important;
+}
+.weblink li a:hover{
+    color: #0094da !important;
+}
+.weblink li+li::before {
+    content: "";
+    width: 1px;
+    height: 12px;
+    position: relative;
+    display: inline-block;
+    top: 2px;
+    margin: 0 4px;
+    background-color: #0094da;
+}
+.ssl-secured{
+    padding: 16px 0 0 0 !important;
+}
+.ssl-secured.d-flex{
+    flex-direction: row;
 }
 .link-to-website{
     font-size: 14px;
@@ -399,7 +433,7 @@ body{
         padding: 24px;
     }
     .app-card{
-        padding: 24px;
+        padding: 12px 24px 24px;
     }
     .special-form{
         margin: 20px 0 !important;
@@ -442,7 +476,7 @@ body{
         padding: 20px;
     }
     .app-card{
-        padding: 20px;
+        padding: 10px 24px 24px;
     }
     .special-form{
         margin: 20px 0 !important;
@@ -486,7 +520,7 @@ body{
         padding: 24px;
     }
     .app-card{
-        padding: 24px;
+        padding: 12px 24px 24px;
     }
     .special-form{
         margin: 20px 0 !important;
@@ -531,7 +565,7 @@ body{
         padding: 24px;
     }
     .app-card{
-        padding: 24px;
+        padding: 12px 24px 24px;
     }
     .footer-content{
         padding-top: 16px;
@@ -563,7 +597,7 @@ body{
         align-items: center;
     }
     .app-card{
-        padding: 24px;
+        padding: 12px 24px 24px;
     }
     .footer-content{
         position: inherit;
@@ -594,7 +628,7 @@ body{
         padding: 24px;
     }
     .app-card{
-        padding: 24px;
+        padding: 12px 24px 24px;
     }
     .download-app{
         font-size: 12px;
@@ -623,7 +657,7 @@ body{
         padding: 24px;
     }
     .app-card{
-        padding: 24px;
+        padding: 12px 24px 24px;
     }
     .download-app{
         font-size: 16px;
