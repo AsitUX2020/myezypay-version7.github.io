@@ -100,8 +100,7 @@ body{
     margin: 20px 0;
 }
 .content-group{
-    padding-right: 32px !important;
-    padding-left: 32px !important;
+    padding: 16PX 60px !important;
 }
 .login-card{
     width: 100%;
