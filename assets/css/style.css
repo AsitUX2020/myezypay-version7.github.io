@@ -1,12 +1,15 @@
 
 body{
     width: 100%;
-    height: 100%;
+    height: 100vh;
     padding: 0;
     margin: 0;
-    background-color: #f0f7ff;
+    background-color: #ffffff !important;
     align-items: center;
     font-family: 'Noto Sans JP', sans-serif !important;
+}
+.form-content{
+    align-items: center;
 }
 .carousel-item{
     height: 100vh;
@@ -100,7 +103,7 @@ body{
     margin: 20px 0;
 }
 .content-group{
-    padding: 16PX 60px !important;
+    padding: 0 60px !important;
 }
 .login-card{
     width: 100%;
@@ -109,17 +112,16 @@ body{
     background-color: #ffffff;
 }
 .logo-login{
-    width: 180px;
+    width: 160px;
     height: auto;
 }
 .login-header{
     text-align: left;
     text-transform: uppercase;
 }
-.login-title{
-    font-size: 20px !important;
+.form-title{
     color: #000000;
-    margin-bottom: 4px !important;
+    margin: 0 0 24px 0 !important;
 }
 .login-description{
     font-size: 20px !important;
@@ -197,7 +199,7 @@ body{
     padding-left: 0;
     font-family: Roboto-Regular,"Helvetica Neue",sans-serif;
     font-size: 14px;
-    margin: 16px 0 20px;
+    margin: 16px 0;
 }
 .loginlink li {
     display: inline-block;
@@ -222,7 +224,7 @@ body{
 .weblink {
     text-align: center;
     list-style: none;
-    padding: 20px 0 0 0;
+    padding: 16px 0 0 0;
     font-family: Roboto-Regular,"Helvetica Neue",sans-serif;
     font-size: 13px;
     font-weight: 600;
@@ -242,7 +244,7 @@ body{
 .weblink li+li::before {
     content: "";
     width: 1px;
-    height: 12px;
+    height: 13px;
     position: relative;
     display: inline-block;
     top: 2px;
@@ -308,11 +310,14 @@ body{
 @media (max-width:280px){
     .special-form{
         margin: 12px;
-        padding: 0 !important;
+        padding: 32px !important;
         width: 100%;
     }
     .login-card{
         padding: 12px;
+    }
+    .content-group{
+        padding: 0 36px !important;
     }
     .app-card{
         padding: 12px;
@@ -350,6 +355,13 @@ body{
         font-size: 12px !important;
         text-align: left !important;
     }
+    .weblink{
+        font-size: 12px  !important;
+    }
+    .weblink li+li::before {
+        height: 12px !important;
+        margin: 0 8px;
+    }
 }
 
 @media (max-width:320px){
@@ -361,7 +373,7 @@ body{
         line-height: 32px !important;
     }
     .special-form{
-        margin: 20px 0 !important;
+        margin: 32px 0 !important;
         width: 100%;
     }
     .login-card{
@@ -372,11 +384,11 @@ body{
     }
     .sectigo-logo{
         width: auto;
-        height: 32px;
+        height: 32px !important;
     }
     .playstore{
         width: auto;
-        height: 32px;
+        height: 32px !important;
     }
     .sm-title{
         font-size: 12px !important;
@@ -416,21 +428,35 @@ body{
     .link-to-website{
         font-size: 12px;
         line-height: 20px;
+    }
+    .weblink{
+        font-size: 12px  !important;
+    }
+    .weblink li+li::before {
+        height: 12px !important;
+        margin: 0 8px;
     }   
 }
 @media (max-width:360px){
     .sectigo-logo{
         width: auto;
-        height: 32px;
+        height: 36px !important;
     }
     .playstore{
         width: auto;
-        height: 32px;
+        height: 36px !important;
     }
     .download-app{
         font-size: 12px !important;
         text-align: left !important;
         padding-right: 0 !important;
+    }
+    .weblink{
+        font-size: 12px  !important;
+    }
+    .weblink li+li::before {
+        height: 12px !important;
+        margin: 0 8px;
     }
 }
 @media (max-width:411px){
@@ -448,7 +474,7 @@ body{
         padding: 12px 24px 24px;
     }
     .special-form{
-        margin: 20px 0 !important;
+        margin: 40px 0 !important;
         width: 100%;
     }
     .footer-content{
@@ -468,7 +494,13 @@ body{
         text-align: left !important;
         padding-right: 0 !important;
     }
-    
+    .weblink{
+        font-size: 14px;
+    }
+    .weblink li+li::before {
+        height: 14px;
+        margin: 0 8px;
+    }
 }
 @media (max-width:414px){
     .navbar-brand img{
@@ -478,6 +510,10 @@ body{
     .join-us {
         line-height: 32px !important;
     }
+    .logo-login{
+        width: 180px;
+        height: auto;
+    }
     .login-card{
         padding: 20px;
     }
@@ -485,7 +521,7 @@ body{
         padding: 10px 24px 24px;
     }
     .special-form{
-        margin: 20px 0 !important;
+        margin: 20px 0;
         padding: 0 !important;
         width: 100%;
     }
@@ -506,6 +542,14 @@ body{
         text-align: left !important;
         padding-right: 0 !important;
     }
+    .sectigo-logo{
+        width: auto;
+        height: 40px;
+    }
+    .playstore{
+        width: auto;
+        height: 40px;
+    }
     
 }
 @media (max-width:540px){
@@ -522,8 +566,9 @@ body{
     .app-card{
         padding: 12px 24px 24px;
     }
+    
     .special-form{
-        margin: 20px 0 !important;
+        margin: 20px 0;
         padding: 0 !important;
         width: 100%;
     }
@@ -626,6 +671,29 @@ body{
         margin: 20px 0;
         width: 100%;
     }
+    .content-group{
+        padding: 0 24px !important;
+    }
+    .login-form{
+        padding-top: 12PX;
+    }
+    .login-description{
+        font-size: 18px !important;
+        margin: 0 0 20px 0 !important;
+    }
+    .input-icon{
+        width: 16px !important;
+        height: 16px !important;
+        top: 14px !important;
+    }
+    .sectigo-logo{
+        width: auto;
+        height: 28px;
+    }
+    .playstore{
+        width: auto;
+        height: 28px;
+    }
     .hero-contact{
         position: absolute;
         left: 22%;
@@ -641,6 +709,9 @@ body{
     
 }
 @media (max-width:1200px){
+    .content-group{
+        padding: 0 48px !important;
+    }
     .login-card{
         padding: 24px;
     }
