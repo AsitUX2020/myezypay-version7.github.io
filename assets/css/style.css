@@ -1,7 +1,7 @@
 
 body{
     width: 100%;
-    height: 100vh;
+    height: 100%;
     padding: 0;
     margin: 0;
     background-color: #ffffff !important;
@@ -566,11 +566,18 @@ body{
     .app-card{
         padding: 12px 24px 24px;
     }
-    
     .special-form{
         margin: 20px 0;
         padding: 0 !important;
         width: 100%;
+    }
+    .sectigo-logo{
+        width: auto;
+        height: 36px !important;
+    }
+    .playstore{
+        width: auto;
+        height: 36px !important;
     }
     .footer-content{
         padding-top: 16px;
