@@ -226,7 +226,7 @@ body{
     list-style: none;
     padding: 16px 0 0 0;
     font-family: Roboto-Regular,"Helvetica Neue",sans-serif;
-    font-size: 13px;
+    font-size: 16px;
     font-weight: 600;
     margin-bottom: 0;
     border-top: 1px solid #cecece;
@@ -244,15 +244,15 @@ body{
 .weblink li+li::before {
     content: "";
     width: 1px;
-    height: 13px;
+    height: 16px;
     position: relative;
     display: inline-block;
     top: 2px;
-    margin: 0 4px;
+    margin: 0 12px;
     background-color: #0094da;
 }
 .ssl-secured{
-    padding: 16px 0 0 0 !important;
+    padding: 32px 0 0 0 !important;
 }
 .ssl-secured.d-flex{
     flex-direction: row;
@@ -452,10 +452,10 @@ body{
         padding-right: 0 !important;
     }
     .weblink{
-        font-size: 12px  !important;
+        font-size: 14px  !important;
     }
     .weblink li+li::before {
-        height: 12px !important;
+        height: 14px !important;
         margin: 0 8px;
     }
 }
@@ -495,11 +495,11 @@ body{
         padding-right: 0 !important;
     }
     .weblink{
-        font-size: 14px;
+        font-size: 16px;
     }
     .weblink li+li::before {
-        height: 14px;
-        margin: 0 8px;
+        height: 16px;
+        margin: 0 8px !important;
     }
 }
 @media (max-width:414px){
@@ -549,6 +549,9 @@ body{
     .playstore{
         width: auto;
         height: 40px;
+    }
+    .weblink li+li::before {
+        margin: 0 12px;
     }
     
 }
@@ -694,6 +697,7 @@ body{
         top: 14px !important;
     }
     .sectigo-logo{
+        
         width: auto;
         height: 28px;
     }
@@ -744,5 +748,8 @@ body{
         font-size: 14px;
         color: #000000;
         margin: 0 !important;
+    }
+    .weblink li+li::before {
+        margin: 0 8px;
     }
 }
