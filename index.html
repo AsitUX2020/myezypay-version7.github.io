@@ -20,6 +20,7 @@
 
     <!-- Custom CSS -->
     <link href="assets/css/style.css" type="text/css" rel="stylesheet" type="text/css">
+    <link href="assets/css/dashboard.css" type="text/css" rel="stylesheet" type="text/css">
     <link href="assets/css/my-style-2.css" rel="stylesheet" type="text/css">
     <link href="assets/css/input-style.css" rel="stylesheet" type="text/css">
     <link href="assets/css/bootstrap/bootstrap.min.css" rel="stylesheet" type="text/css">
@@ -43,8 +44,42 @@
     <link href="assets/plugins/sidebar/sidemenu.css" rel="stylesheet">
 
     <!--- Icons css --->
-    <link href="../../assets/css/icons.css" rel="stylesheet">
+    <link href="assets/css/icons.css" rel="stylesheet">
 
+    <!--- Animations css --->
+    <link href="assets/css/animate.css" rel="stylesheet">
+
+    <!-- Owl-carousel css-->
+    <link href="assets/plugins/owl-carousel/owl.carousel.css" rel="stylesheet" />
+
+    <style type="text/css">
+        /* Chart.js */
+        @-webkit-keyframes chartjs-render-animation {
+            from {
+                opacity: 0.99
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        @keyframes chartjs-render-animation {
+            from {
+                opacity: 0.99
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        .chartjs-render-monitor {
+            -webkit-animation: chartjs-render-animation 0.001s;
+            animation: chartjs-render-animation 0.001s;
+        }
+    </style>
+    
 
 </head>
 
@@ -57,7 +92,7 @@
     <!-- Start Hero Content -->
     <div class="page">
         <!-- main-sidebar opened -->
-        <div class="app-sidebar__overlay active" data-toggle="sidebar"></div>
+        <div class="app-sidebar__overlay active sidebar-mini" data-toggle="sidebar"></div>
         <aside class="main-sidebar app-sidebar sidebar-scroll ps ps--active-y">
             <div class="main-sidebar-header active">
                 <a class="desktop-logo logo-light active" href="index.html"><img
@@ -83,13 +118,13 @@
                 <ul class="nav d-flex sidebar-panel" style="position: relative;">
                     <li class="d-flex justify-content-center">
                         <div class="">
-                            <span class="d-block"> <span class="label" style="color: green">Main Balance</span>
+                            <span class="d-block"> <span class="label" style="color: green; font-size: 12px;">Main Balance</span>
                             </span> <span class="value"> ₹53,000 </span>
                         </div>
                     </li>
                     <li class="d-flex justify-content-center">
                         <div class="">
-                            <span class="d-block"> <span class="label" style="color: crimson;">AePs Balance</span>
+                            <span class="d-block"> <span class="label" style="color: crimson; font-size: 12px;">AePs Balance</span>
                             </span> <span class="value"> ₹1,34,000 </span>
                         </div>
                     </li>
@@ -327,12 +362,11 @@
                                         </g>
                                     </g>
                                 </svg></a> </div>
-                        <div class="responsive-logo"> <a href="index.html"><img
-                                    src="../../assets/img/brand/logo-white.png" class="logo-1"></a> <a
-                                href="index.html"><img src="../../assets/img/brand/logo.png" class="logo-11"></a> <a
-                                href="index.html"><img src="../../assets/img/brand/favicon-white.png"
-                                    class="logo-2"></a> <a href="index.html"><img
-                                    src="../../assets/img/brand/favicon.png" class="logo-12"></a> </div>
+                        <div class="responsive-logo">
+                            <a href="index.html"><img src="assets/images/brand/logo-white.png" class="logo-1"></a>
+                            <a href="index.html"><img src="assets/images/brand/logo.png" class="logo-11"></a>
+                            <a href="index.html"><img src="assets/images/brand/favicon.png" class="logo-2"></a>
+                        </div>
                         <ul class="header-megamenu-dropdown  nav">
                             <li class="nav-item">
                                 <div class="btn-group dropdown"> <button aria-expanded="false" aria-haspopup="true"
@@ -610,9 +644,6 @@
                                             class="fas fa-sign-out-alt"></i> Sign Out</a>
                                 </div>
                             </div>
-                            <div class="dropdown main-header-message right-toggle"> <a class="nav-link pr-0"
-                                    data-toggle="sidebar-right" data-target=".sidebar-right"> <i
-                                        class="ion ion-md-menu tx-20 bg-transparent"></i> </a> </div>
                         </div>
                     </div>
                 </div>
@@ -630,24 +661,6 @@
                             </ol>
                         </nav>
                     </div>
-                    <div class="d-flex my-auto">
-                        <div class=" d-flex right-page">
-                            <div class="d-flex justify-content-center mr-5">
-                                <div class=""> <span class="d-block"> <span class="label ">EXPENSES</span> </span> <span
-                                        class="value"> $53,000 </span> </div>
-                                <div class="ml-3 mt-2"> <span class="sparkline_bar"><canvas width="52" height="30"
-                                            style="display: inline-block; width: 52px; height: 30px; vertical-align: top;"></canvas></span>
-                                </div>
-                            </div>
-                            <div class="d-flex justify-content-center">
-                                <div class=""> <span class="d-block"> <span class="label">PROFIT</span> </span> <span
-                                        class="value"> $34,000 </span> </div>
-                                <div class="ml-3 mt-2"> <span class="sparkline_bar31"><canvas width="52" height="30"
-                                            style="display: inline-block; width: 52px; height: 30px; vertical-align: top;"></canvas></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div> <!-- /breadcrumb -->
                 <!-- main-content-body -->
                 <div class="main-content-body">
@@ -657,7 +670,7 @@
                                 <div class="card-body">
                                     <div class="d-flex">
                                         <div class="my-auto"> <svg enable-background="new 0 0 469.682 469.682"
-                                                version="1.1" class="mr-4 ht-60 wd-60 my-auto primary"
+                                                version="1.1" class="mr-3 ht-60 wd-60 my-auto primary"
                                                 viewBox="0 0 469.68 469.68" xml:space="preserve"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path
@@ -692,7 +705,7 @@
                                 <div class="card-body">
                                     <div class="d-flex">
                                         <div class="my-auto"> <svg enable-background="new 0 0 438.891 438.891"
-                                                class="mr-4 ht-60 wd-60 my-auto danger" version="1.1"
+                                                class="mr-3 ht-60 wd-60 my-auto danger" version="1.1"
                                                 viewBox="0 0 438.89 438.89" xml:space="preserve"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path
@@ -733,7 +746,7 @@
                                 <div class="card-body">
                                     <div class="d-flex">
                                         <div class="my-auto"> <svg enable-background="new 0 0 477.849 477.849"
-                                                class="mr-4 ht-60 wd-60 my-auto success" version="1.1"
+                                                class="mr-3 ht-60 wd-60 my-auto success" version="1.1"
                                                 viewBox="0 0 477.85 477.85" xml:space="preserve"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path
@@ -765,7 +778,7 @@
                                 <div class="card-body">
                                     <div class="d-flex">
                                         <div class="my-auto"> <svg enable-background="new 0 0 512 512"
-                                                class="mr-4 ht-60 wd-60 my-auto warning" version="1.1"
+                                                class="mr-3 ht-60 wd-60 my-auto warning" version="1.1"
                                                 viewBox="0 0 512 512" xml:space="preserve"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path
@@ -792,7 +805,7 @@
                             <div class="card overflow-hidden">
                                 <div class="card-header bg-transparent pd-b-0 pd-t-20 bd-b-0">
                                     <div class="d-flex justify-content-between">
-                                        <h4 class="card-title mg-b-10">Project Budget</h4> <i
+                                        <h4 class="card-title mg-b-10">Business Analysis</h4> <i
                                             class="mdi mdi-dots-horizontal text-gray"></i>
                                     </div>
                                     <p class="tx-12 text-muted mb-2">The Project Budget is a tool used by project
@@ -814,14 +827,14 @@
                                         </div>
                                     </div>
                                     <div class="area chart-legend mb-0">
-                                        <div> <i class="mdi mdi-album text-primary mr-2"></i> Total Budget </div>
-                                        <div> <i class="mdi mdi-album text-pink mr-2"></i>Amount Used </div>
+                                        <div> <i class="mdi mdi-album text-primary mr-2"></i> Total Investment </div>
+                                        <div> <i class="mdi mdi-album text-pink mr-2"></i>Profitable Amount </div>
                                     </div> <canvas id="project-budget" class="ht-300 chartjs-render-monitor" width="815"
                                         height="407" style="display: block; width: 815px; height: 407px;"></canvas>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-4">
+                        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-4" style="display: none;">
                             <div class="card overflow-hidden">
                                 <div class="card-body pb-3">
                                     <div class="d-flex justify-content-between">
@@ -919,7 +932,7 @@
                         </div>
                     </div> <!-- /row -->
                     <!-- row -->
-                    <div class="row row-sm">
+                    <div class="row row-sm" style="display: none;">
                         <div class="col-lg-6 col-xl-4 col-md-12 col-sm-12">
                             <div class="card overflow-hidden latest-tasks">
                                 <div class="">
@@ -1299,7 +1312,7 @@
                         </div>
                     </div> <!-- /row -->
                     <!-- row -->
-                    <div class="row row-sm ">
+                    <div class="row row-sm" style="display: none;">
                         <div class="col-md-12 col-xl-12">
                             <div class="card overflow-hidden review-project">
                                 <div class="card-body">
@@ -1432,7 +1445,7 @@
                         </div>
                     </div> <!-- /row -->
                     <!-- row -->
-                    <div class="row row-sm ">
+                    <div class="row row-sm" style="display: none;">
                         <div class="col-lg-12 col-xl-4 col-sm-12">
                             <div class="card">
                                 <div class="card-header pb-0 pt-4">
@@ -1648,119 +1661,72 @@
                     </div>
                 </div> <!-- /row -->
             </div> <!-- /container -->
-        </div> <!-- /main-content -->
-        <!--Sidebar-right-->
-        <div class="sidebar sidebar-right sidebar-animate ps ps--active-y">
-            <div class="panel panel-primary card mb-0">
-                <div class="panel-body tabs-menu-body p-0 border-0">
-                    <ul class="Date-time">
-                        <li class="time">
-                            <h1 class="animated ">13:19</h1>
-                            <p class="animated ">Tuesday, May 18th 2021</p>
-                        </li>
-                    </ul>
-                    <div class="card-body latest-tasks">
-                        <h3 class="events-title"><span>Events For Week </span></h3>
-                        <div class="event">
-                            <div class="Day">Monday 20 Jan</div> <a href="#">No Events Today</a>
-                        </div>
-                        <div class="event">
-                            <div class="Day">Tuesday 21 Jan</div> <a href="#">No Events Today</a>
-                        </div>
-                        <div class="event">
-                            <div class="Day">Wednessday 22 Jan</div>
-                            <div class="tasks">
-                                <div class=" task-line primary"> <a href="#" class="label"> XML Import &amp; Export </a>
-                                    <div class="time"> 12:00 PM </div>
-                                </div>
-                                <div class="checkbox"> <label class="check-box"> <label class="ckbox"><input checked=""
-                                                type="checkbox"><span></span></label> </label> </div>
-                            </div>
-                            <div class="tasks">
-                                <div class="task-line danger"> <a href="#" class="label"> Connect API to pages </a>
-                                    <div class="time"> 08:00 AM </div>
-                                </div>
-                                <div class="checkbox"> <label class="check-box"> <label class="ckbox"><input
-                                                type="checkbox"><span></span></label> </label> </div>
-                            </div>
-                        </div>
-                        <div class="event">
-                            <div class="Day">Thursday 23 Jan</div>
-                            <div class="tasks">
-                                <div class="task-line success"> <a href="#" class="label"> Create Wireframes </a>
-                                    <div class="time"> 06:20 PM </div>
-                                </div>
-                                <div class="checkbox"> <label class="check-box"> <label class="ckbox"><input
-                                                type="checkbox"><span></span></label> </label> </div>
-                            </div>
-                        </div>
-                        <div class="event">
-                            <div class="Day">Friday 24 Jan</div>
-                            <div class="tasks">
-                                <div class="task-line warning"> <a href="#" class="label"> Test new features in tablets
-                                    </a>
-                                    <div class="time"> 02: 00 PM </div>
-                                </div>
-                                <div class="checkbox"> <label class="check-box"> <label class="ckbox"><input
-                                                type="checkbox"><span></span></label> </label> </div>
-                            </div>
-                            <div class="tasks">
-                                <div class="task-line teal"> <a href="#" class="label"> Design Evommerce </a>
-                                    <div class="time"> 10: 00 PM </div>
-                                </div>
-                                <div class="checkbox"> <label class="check-box"> <label class="ckbox"><input
-                                                type="checkbox"><span></span></label> </label> </div>
-                            </div>
-                            <div class="tasks mb-0">
-                                <div class="task-line purple"> <a href="#" class="label"> Fix Validation Issues </a>
-                                    <div class="time"> 12: 00 AM </div>
-                                </div>
-                                <div class="checkbox"> <label class="check-box"> <label class="ckbox"><input
-                                                type="checkbox"><span></span></label> </label> </div>
-                            </div>
-                        </div>
-                        <div class="d-flex pagination wd-100p"> <a href="#">Previous</a> <a href="#"
-                                class="ml-auto">Next</a> </div>
-                    </div>
-                    <div class="card-body border-top border-bottom">
-                        <div class="row">
-                            <div class="col-4 text-center"> <a class="" href=""><i
-                                        class="dropdown-icon mdi  mdi-message-outline fs-20 m-0 leading-tight"></i></a>
-                                <div>Inbox</div>
-                            </div>
-                            <div class="col-4 text-center"> <a class="" href=""><i
-                                        class="dropdown-icon mdi mdi-tune fs-20 m-0 leading-tight"></i></a>
-                                <div>Settings</div>
-                            </div>
-                            <div class="col-4 text-center"> <a class="" href=""><i
-                                        class="dropdown-icon mdi mdi-logout-variant fs-20 m-0 leading-tight"></i></a>
-                                <div>Sign out</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="ps__rail-x" style="left: 0px; top: 0px;">
-                <div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div>
-            </div>
-            <div class="ps__rail-y" style="top: 0px; height: 757px; right: 0px;">
-                <div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 584px;"></div>
-            </div>
         </div>
-        <!--/Sidebar-right-->
+        <!-- /main-content -->
         <!-- Footer opened -->
         <div class="main-footer ht-40">
             <div class="container-fluid pd-t-0-f ht-100p"> <span>Copyright © 2020 <a href="#">Azira</a>. Designed by <a
                         href="https://www.spruko.com/">Spruko</a> All rights reserved.</span> </div>
-        </div> <!-- Footer closed -->
+        </div>
+        <!-- Footer closed -->
     </div>
     <!-- End Hero Content -->
     <!--Start Back-to-top-->
     <a href="#top" id="back-to-top"><i class="las la-angle-double-up"></i></a>
     <!--End Back-to-top-->
+    <div class="main-navbar-backdrop"></div>
 
     <!-- jQuery -->
     <script src="assets/js/jquery.min.js"></script>
+
+    <!--- Datepicker js --->
+    <script src="assets/plugins/jquery-ui/ui/widgets/datepicker.js"></script>
+
+    <!--- Ionicons js --->
+    <script src="assets/plugins/ionicons/ionicons.js"></script>
+
+    <!--- Chart js --->
+    <script src="assets/plugins/chart.js/Chart.bundle.min.js"></script>
+
+    <!--- JQuery sparkline js --->
+    <script src="assets/plugins/jquery-sparkline/jquery.sparkline.min.js"></script>
+
+    <!--- Internal Sampledata js --->
+    <script src="assets/js/chart.flot.sampledata.js"></script>
+
+    <!--- Rating js --->
+    <script src="assets/plugins/rating/jquery.rating-stars.js"></script>
+    <script src="assets/plugins/rating/jquery.barrating.js"></script>
+
+    <!--- Eva-icons js --->
+    <script src="../../assets/js/eva-icons.min.js"></script>
+
+    <!--- Moment js --->
+    <script src="../../assets/plugins/moment/moment.js"></script>
+
+    <!--- Perfect-scrollbar js --->
+    <script src="../../assets/plugins/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="../../assets/plugins/perfect-scrollbar/p-scroll.js"></script>
+
+    <!--- Switcher js --->
+    <script src="../../assets/switcher/js/switcher.js"></script>
+
+    <!--- Sidebar js --->
+    <script src="../../assets/plugins/side-menu/sidemenu.js"></script>
+    <script src="../../assets/plugins/sidebar/sidebar-custom.js"></script>
+
+    <!-- Morris js -->
+    <script src="../../assets/plugins/raphael/raphael.min.js"></script>
+    <script src="../../assets/plugins/morris.js/morris.min.js"></script>
+
+    <!--- Scripts js --->
+    <script src="../../assets/js/script.js"></script>
+
+    <!--- Index js --->
+    <script src="../../assets/js/index.js"></script>
+
+    <!--- Custom js --->
+    <script src="../../assets/js/custom.js"></script>
 
     <!-- Bootstrap -->
     <script src="assets/js/bootstrap.bundle.min.js"></script>
