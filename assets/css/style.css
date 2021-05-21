@@ -323,6 +323,15 @@ img {
 .breadcrumb-item.active {
     color: #fff !important;
 }
+.btn.focus, .btn:focus{
+    box-shadow: none !important;
+}
+.btn-link.focus, .btn-link:focus{
+    text-decoration: none !important;
+}
+.btn-link:hover{
+    text-decoration: none !important;
+}
 
 @media (max-width:280px){
     .special-form{
