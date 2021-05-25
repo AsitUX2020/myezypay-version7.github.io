@@ -333,6 +333,13 @@ img {
     text-decoration: none !important;
 }
 
+.dropdown-item i {
+    font-size: 16px !important;
+    margin-right: 10px !important;
+    width: 24px !important;
+    text-align: center !important;
+}
+
 @media (max-width:280px){
     .special-form{
         margin: 12px;
