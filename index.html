@@ -86,7 +86,7 @@
             animation: chartjs-render-animation 0.001s;
         }
     </style>
-    
+
 
 </head>
 
@@ -125,13 +125,15 @@
                 <ul class="nav d-flex sidebar-panel" style="position: relative;">
                     <li class="d-flex justify-content-center">
                         <div class="">
-                            <span class="d-block"> <span class="label" style="color: green; font-size: 12px;">Main Balance</span>
+                            <span class="d-block"> <span class="label" style="color: green; font-size: 12px;">Main
+                                    Balance</span>
                             </span> <span class="value"> ₹53,000 </span>
                         </div>
                     </li>
                     <li class="d-flex justify-content-center">
                         <div class="">
-                            <span class="d-block"> <span class="label" style="color: crimson; font-size: 12px;">AePs Balance</span>
+                            <span class="d-block"> <span class="label" style="color: crimson; font-size: 12px;">AePs
+                                    Balance</span>
                             </span> <span class="value"> ₹1,34,000 </span>
                         </div>
                     </li>
@@ -149,7 +151,7 @@
                                 class="side-menu__icon fe fe-mail menu-icons"></i><span
                                 class="side-menu__label">Mail</span><span
                                 class="badge badge-warning side-badge">5</span>
-                                <i class="angle fe fe-chevron-down"></i></a>
+                            <i class="angle fe fe-chevron-down"></i></a>
                         <ul class="slide-menu">
                             <li><a class="slide-item" href="mail.html">Mail</a></li>
                             <li><a class="slide-item" href="mail-compose.html">Mail Compose</a></li>
@@ -473,7 +475,8 @@
                                 <a class="new nav-link full-screen-link" href="#"><i class="fe fe-maximize"></i></a>
                             </div>
                             <div class="dropdown nav-item main-header-message">
-                                <a class="new nav-link" href="#"><i class="fe fe-mail"></i><span class="pulse-danger"></span></a>
+                                <a class="new nav-link" href="#"><i class="fe fe-mail"></i><span
+                                        class="pulse-danger"></span></a>
                                 <div class="dropdown-menu">
                                     <div class="menu-header-content bg-primary-gradient text-left d-flex">
                                         <div class="">
@@ -561,7 +564,7 @@
                                 </div>
                             </div>
                             <div class="dropdown nav-item main-header-notification"> <a class="new nav-link" href="#">
-                                <i class="fe fe-bell"></i><span class=" pulse"></span></a>
+                                    <i class="fe fe-bell"></i><span class=" pulse"></span></a>
                                 <div class="dropdown-menu">
                                     <div class="menu-header-content bg-primary-gradient text-left d-flex">
                                         <div class="">
@@ -637,8 +640,10 @@
                                     <div class="dropdown-footer"> <a href="#">VIEW ALL</a> </div>
                                 </div>
                             </div>
-                            <div class="dropdown main-profile-menu nav nav-item nav-link" data-toggle="dropdown" href='#'>
-                                <a class="profile-user d-flex" href=""><img src="assets/img/faces/12.jpg" alt="user-img" class="rounded-circle mCS_img_loaded"><span></span></a>
+                            <div class="dropdown main-profile-menu nav nav-item nav-link" data-toggle="dropdown"
+                                href='#'>
+                                <a class="profile-user d-flex" href=""><img src="assets/img/faces/12.jpg" alt="user-img"
+                                        class="rounded-circle mCS_img_loaded"><span></span></a>
                                 <div class="dropdown-menu">
                                     <div class="main-header-profile header-img" id="accountNavbarDropdown">
                                         <div class="main-img-user"><img alt="" src="assets/img/faces/12.jpg"></div>
@@ -647,8 +652,10 @@
                                     <a class="dropdown-item" href=""><i class="far fa-user"></i> My Profile</a>
                                     <a class="dropdown-item" href=""><i class="far fa-edit"></i> Edit Profile</a>
                                     <a class="dropdown-item" href=""><i class="far fa-clock"></i> Activity Logs</a>
-                                    <a class="dropdown-item" href=""><i class="fas fa-sliders-h"></i> Account Settings</a>
-                                    <a class="dropdown-item" href="login.html"><i class="fas fa-sign-out-alt"></i> Sign Out</a>
+                                    <a class="dropdown-item" href=""><i class="fas fa-sliders-h"></i> Account
+                                        Settings</a>
+                                    <a class="dropdown-item" href="#login" onclick="goto('login')"><i
+                                            class="fas fa-sign-out-alt"></i> Sign Out</a>
                                 </div>
                             </div>
                         </div>
@@ -1698,7 +1705,7 @@
 
     <!--- Chart js --->
     <script src="assets/plugins/chart.js/Chart.bundle.min.js"></script>
-    
+
     <!--- JQuery sparkline js --->
     <script src="assets/plugins/jquery-sparkline/jquery.sparkline.min.js"></script>
 
@@ -1761,21 +1768,27 @@
     <script>
         var elem = document.getElementById("hero");
         function openFullscreen() {
-          if (elem.requestFullscreen) {
-            elem.requestFullscreen();
-          } else if (elem.webkitRequestFullscreen) { /* Safari */
-            elem.webkitRequestFullscreen();
-          } else if (elem.msRequestFullscreen) { /* IE11 */
-            elem.msRequestFullscreen();
-          }
+            if (elem.requestFullscreen) {
+                elem.requestFullscreen();
+            } else if (elem.webkitRequestFullscreen) { /* Safari */
+                elem.webkitRequestFullscreen();
+            } else if (elem.msRequestFullscreen) { /* IE11 */
+                elem.msRequestFullscreen();
+            }
         }
     </script>
     <!--- End Full Screen js --->
 
     <script>
-        $(document).ready(function(){
+        $(document).ready(function () {
             $('.dropdown-toggle').dropdown()
         });
+    </script>
+
+    <script>
+        function goto($hashtag){
+         document.location = "login.html#" + $hashtag;
+        }
     </script>
 </body>
 
