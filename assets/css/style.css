@@ -43,6 +43,7 @@ img {
 .sidebar-panel li{
     padding: 0 !important;
     border: none !important;
+    background-color: transparent !important;
 }
 .sidebar-panel li+li::before {
     content: "";
