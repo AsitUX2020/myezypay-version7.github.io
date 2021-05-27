@@ -27,6 +27,9 @@ img {
     line-height: 1;
     color: #646464;
 }
+.sidebar-scroll {
+    height: 100vh;
+}
 .sidebar-balance {
     vertical-align: middle;
     padding: 20px 28px !important;
