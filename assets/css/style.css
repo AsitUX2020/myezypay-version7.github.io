@@ -33,6 +33,7 @@ img {
     border-bottom: 1px solid #e0e0e0;
 }
 .sidebar-panel .value {
+    letter-spacing: 1px;
     color: #161537;
     font-size: 16px;
     display: block;
