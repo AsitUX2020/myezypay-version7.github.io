@@ -24,6 +24,9 @@
     <!-- CSS Front Template -->
     <link rel="stylesheet" href="assets/css/theme.minc619.css?v=1.0">
 
+    <!-- Custom CSS -->
+    <link href="assets/css/style.css" type="text/css" rel="stylesheet" type="text/css">
+
     <!-- Font Awesome -->
     <link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css">
     <link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -56,13 +59,13 @@
                 <!-- Toggle Button -->
                 <a class="js-hs-unfold-invoker btn btn-icon btn-xs btn-ghost-dark" href="javascript:;"
                     data-hs-unfold-options='{
-                  "target": "#styleSwitcherDropdown",
-                  "type": "css-animation",
-                  "animationIn": "fadeInRight",
-                  "animationOut": "fadeOutRight",
-                  "hasOverlay": true,
-                  "smartPositionOff": true
-                 }'>
+                        "target": "#styleSwitcherDropdown",
+                        "type": "css-animation",
+                        "animationIn": "fadeInRight",
+                        "animationOut": "fadeOutRight",
+                        "hasOverlay": true,
+                        "smartPositionOff": true
+                        }'>
                     <i class="tio-clear tio-lg"></i>
                 </a>
                 <!-- End Toggle Button -->
@@ -425,7 +428,7 @@
                     <!-- End Logo -->
                 </div>
 
-                
+
 
                 <!-- Secondary Content -->
                 <div class="navbar-nav-wrap-content-right">
@@ -883,16 +886,20 @@
 
                         <li class="nav-item">
                             <!-- Account -->
-                            <div class="hs-unfold">
+                            <div class="hs-unfold align-items-center">
                                 <a class="js-hs-unfold-invoker navbar-dropdown-account-wrapper" href="javascript:;"
                                     data-hs-unfold-options='{
-                 "target": "#accountNavbarDropdown",
-                 "type": "css-animation"
-               }'>
+                                        "target": "#accountNavbarDropdown",
+                                        "type": "css-animation"
+                                    }'>
                                     <div class="avatar avatar-sm avatar-circle">
                                         <img class="avatar-img" src="assets/img/160x160/img6.jpg"
                                             alt="Image Description">
                                         <span class="avatar-status avatar-sm-status avatar-status-success"></span>
+                                    </div>
+                                    <div class="media-body" style="padding-left: 12px; padding-right: 12px;">
+                                        <span class="profile-title">Avijit Dutta</span>
+                                        <span class="profile-text">Sales Executive</span>
                                     </div>
                                 </a>
 
@@ -919,11 +926,12 @@
                                     <a class="dropdown-item" href=""><i class="far fa-edit mr-2"></i> Edit Profile</a>
 
                                     <a class="dropdown-item" href=""><i class="far fa-clock mr-2"></i> Activity Logs</a>
-                                    
-                                    <a class="dropdown-item" href=""><i class="fas fa-sliders-h mr-2"></i> Account Settings</a>
+
+                                    <a class="dropdown-item" href=""><i class="fas fa-sliders-h mr-2"></i> Account
+                                        Settings</a>
 
                                     <div class="dropdown-divider"></div>
-                                    
+
                                     <a class="dropdown-item text-danger" href="login.html"><i
                                             class="fas fa-sign-out-alt mr-2"></i> Sign Out</a>
                                 </div>
@@ -3589,10 +3597,10 @@
     <!--Sidebar Main-->
     <div id="sidebarMain" class="d-none">
         <aside
-            class="js-navbar-vertical-aside navbar navbar-vertical-aside navbar-vertical navbar-vertical-fixed navbar-expand-xl navbar-bordered  ">
+            class="js-navbar-vertical-aside navbar navbar-vertical-aside navbar-vertical navbar-vertical-fixed navbar-expand-xl navbar-bordered">
             <div class="navbar-vertical-container">
                 <div class="navbar-vertical-footer-offset">
-                    <div class="navbar-brand-wrapper justify-content-between">
+                    <div class="navbar-brand-wrapper justify-content-between" style="border-bottom: 1px solid #e0e0e0;">
                         <!-- Logo -->
 
 
@@ -3613,6 +3621,28 @@
 
                     <!-- Content -->
                     <div class="navbar-vertical-content">
+                        <!-- Balance -->
+                        <div class="navbar-vertical-aside-mini-mode-hidden-elements sidebar-balance">
+                            <ul class="nav list-group list-group-horizontal sidebar-panel">
+                                <li class="list-group-item d-flex justify-content-center">
+                                    <div class="">
+                                        <span class="d-block"> <span class="balance-label"
+                                                style="color: green; font-size: 12px;">Main
+                                                Balance</span>
+                                        </span> <span class="value"> ₹53,000 </span>
+                                    </div>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-center">
+                                    <div class="">
+                                        <span class="d-block"> <span class="balance-label"
+                                                style="color: crimson; font-size: 12px;">AePs
+                                                Balance</span>
+                                        </span> <span class="value"> ₹1,34,000 </span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- End Balance -->
                         <ul class="navbar-nav navbar-nav-lg nav-tabs">
                             <!-- Dashboards -->
                             <li class="nav-item">
@@ -3641,8 +3671,8 @@
                                 <a class="js-navbar-vertical-aside-menu-link nav-link nav-link-toggle "
                                     href="javascript:;" title="AePS Cashout">
                                     <i class="fe fe-database nav-icon"></i>
-                                    <span
-                                        class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate">AePS Cashout</span>
+                                    <span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate">AePS
+                                        Cashout</span>
                                 </a>
 
                                 <ul class="js-navbar-vertical-aside-submenu nav nav-sub">
@@ -3952,10 +3982,11 @@
 
                             <!-- Money Transfer -->
                             <li class="nav-item ">
-                                <a class="js-nav-tooltip-link nav-link " href="money-transfer.html" title="Money Transfer"
-                                    data-placement="left">
+                                <a class="js-nav-tooltip-link nav-link " href="money-transfer.html"
+                                    title="Money Transfer" data-placement="left">
                                     <i class="fe fe-send nav-icon"></i>
-                                    <span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate">Money Transfer
+                                    <span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate">Money
+                                        Transfer
                                         <span class="badge badge-danger badge-pill ml-1">Popular</span>
                                     </span>
                                 </a>
@@ -3967,7 +3998,8 @@
                                 <a class="js-nav-tooltip-link nav-link " href="micro-atm.html" title="Micro ATM"
                                     data-placement="left">
                                     <i class="fe fe-codepen nav-icon"></i>
-                                    <span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate">Micro ATM Cashout</span>
+                                    <span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate">Micro
+                                        ATM Cashout</span>
                                 </a>
                             </li>
                             <!-- End Micro ATM -->
@@ -3977,8 +4009,8 @@
                                 <a class="js-navbar-vertical-aside-menu-link nav-link nav-link-toggle "
                                     href="javascript:;" title="Bill Payments">
                                     <i class="fe fe-layers nav-icon"></i>
-                                    <span
-                                        class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate">Bill Payments</span>
+                                    <span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate">Bill
+                                        Payments</span>
                                 </a>
 
                                 <ul class="js-navbar-vertical-aside-submenu nav nav-sub">
@@ -3991,15 +4023,13 @@
 
                                         <ul class="js-navbar-vertical-aside-submenu nav nav-sub">
                                             <li class="nav-item">
-                                                <a class="nav-link " href="mobileRecharge.html"
-                                                    title="Basic">
+                                                <a class="nav-link " href="mobileRecharge.html" title="Basic">
                                                     <span class="tio-circle-outlined nav-indicator-icon"></span>
                                                     <span class="text-truncate">Mobile Recharge</span>
                                                 </a>
                                             </li>
                                             <li class="nav-item">
-                                                <a class="nav-link " href="dthRecharge.html"
-                                                    title="Cover">
+                                                <a class="nav-link " href="dthRecharge.html" title="Cover">
                                                     <span class="tio-circle-outlined nav-indicator-icon"></span>
                                                     <span class="text-truncate">DTH Recharge</span>
                                                 </a>
@@ -5093,8 +5123,7 @@
                     </div>
 
                     <div class="col-sm-auto">
-                        <a class="js-hs-unfold-invoker btn btn-primary" href="javascript:;"
-                            data-hs-unfold-options='{
+                        <a class="js-hs-unfold-invoker btn btn-primary" href="javascript:;" data-hs-unfold-options='{
                                 "target": "#activitySidebar",
                                 "type": "css-animation",
                                 "animationIn": "fadeInRight",
@@ -6541,7 +6570,7 @@
     <!-- ========== END MAIN CONTENT ========== -->
 
     <!-- ========== SECONDARY CONTENTS ========== -->
-    
+
     <!-- Activity -->
     <div id="activitySidebar" class="hs-unfold-content sidebar sidebar-bordered sidebar-box-shadow">
         <div class="card card-lg sidebar-card">
