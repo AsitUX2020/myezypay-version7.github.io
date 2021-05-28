@@ -27,20 +27,8 @@ img {
     line-height: 1;
     color: #646464;
 }
-.sidebar-scroll {
-    height: 100vh;
-}
-.ps {
-}
-.ps>.ps__rail-y {
-    width: 2px;
-    background-color: #bec9e3;
-    z-index: 10;
-    position: absolute;
-    left: auto !important;
-    right: 0;
-    opacity: 0;
-    transition: opacity 0.2s;
+.navbar-vertical-content:hover{
+    overflow-y: scroll !important;
 }
 .sidebar-balance {
     vertical-align: middle;
