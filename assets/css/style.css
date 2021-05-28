@@ -27,13 +27,25 @@ img {
     line-height: 1;
     color: #646464;
 }
+.navbar-vertical-content{
+    overflow-y: hidden !important;
+}
 .navbar-vertical-content:hover{
     overflow-y: scroll !important;
+}
+.sidebarMenu-header{
+    border-bottom: 1px solid #e0e0e0;
+}
+.navbar-dark .sidebarMenu-header{
+    border-bottom: 1px solid #454f67;
 }
 .sidebar-balance {
     vertical-align: middle;
     padding: 20px 28px !important;
     border-bottom: 1px solid #e0e0e0;
+}
+.navbar-dark .sidebar-balance {
+    border-bottom: 1px solid #454f67;
 }
 .sidebar-panel .value {
     letter-spacing: 1px;
@@ -59,11 +71,14 @@ img {
     margin: 0 16px;
     background-color: #377dff;
 }
+.navbar-dark .sidebar-panel li+li::before {
+    background-color: #454f67;
+}
 .navbar-dark .balance-label{
     color: #fff !important;
 }
 .navbar-dark .value{
-    color: #fff !important;
+    color: #e2a418 !important;
 }
 .form-content{
     align-items: center;
